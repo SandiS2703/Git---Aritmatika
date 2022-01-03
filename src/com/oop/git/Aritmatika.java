@@ -13,6 +13,9 @@ public class Aritmatika {
 	}
 	
 	//Developer 2(mult)
+	public double mul(int a, int b) {
+		return a * b;
+	}
 	
 	//Developer 3(div)
 }

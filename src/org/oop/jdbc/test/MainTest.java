@@ -1,6 +1,6 @@
 package org.oop.jdbc.test;
 
-//import java.util.Scanner;
+import java.util.Scanner;
 
 //import javax.xml.validation.Validator;
 
@@ -8,6 +8,7 @@ import org.oop.jdbc.pojo.Dosen;
 import org.oop.jdbc.utils.DatabaseUtil;
 //import org.oop.jdbc.utils.DatabaseUtil;
 //import org.oop.jdbc.utils.Validator;
+import org.oop.jdbc.utils.Validator;
 
 import com.oop.jdbc.dao.DosenDAOImpl;
 import com.oop.jdbc.daoimpl.DosenDAO;
@@ -34,15 +35,15 @@ public class MainTest {
 		
 		operation.saveDosen(ds);
 		
-		/*Scanner scanner = new Scanner(System.in);
+		Scanner scanner = new Scanner(System.in);
 		Validator val = new Validator();
-		DosenDAO operation = new DosenDAOImpl();
+		//DosenDAO operation = new DosenDAOImpl();
 		Dosen dosen;
 		String email,password;
 		boolean login = false;
 		
 		do {
-			//System.out.print("Email : "); email = scanner.nextLine();
+			System.out.print("Email : "); email = scanner.nextLine();
 			email = val.validateInput(scanner, "masukkan email :", "email");
 			System.out.print("Password : "); password = scanner.nextLine();
 			System.out.println();
@@ -54,6 +55,6 @@ public class MainTest {
 				System.out.println("Email atau Password anda salah, coba lagi.....");
 			}
 		}while(!login);
-		scanner.close();*/
+		scanner.close();
 	}
 }
